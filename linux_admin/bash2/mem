@@ -1,0 +1,5 @@
+#!/bin/bash
+USR_GRP_NAME="mem_stat_admins"
+
+#Create new User Group
+addgroup -f ${USR_GRP_NAME}
